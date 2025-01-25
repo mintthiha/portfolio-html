@@ -1,0 +1,128 @@
+html {
+  background-color: #100911;
+  color: white;
+  font-family: "Oswald";
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  margin: 0;
+  font-size: 24px;
+  color: gray;
+}
+
+h5 {
+  font-size: 32px;
+  margin-bottom: 0px;
+}
+
+#first-view-box {
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Aligns items vertically in the center */
+  justify-content: space-between; /* Ensures space is distributed evenly */
+  padding-top: 200px;
+}
+
+#first-view-box div {
+  flex: 0 0 70%; /* Takes up 70% of the width */
+}
+
+#first-view-box img {
+  flex: 0 0 auto; /* Prevents the image from resizing with flexbox */
+  width: 150px; /* Fixed width */
+  height: 150px; /* Fixed height */
+  border-radius: 50%; /* Optional: Makes the image circular */
+}
+
+#first-view-box p {
+  color: white;
+}
+
+
+main section {
+  width: 35%;
+  height: auto;
+  padding-bottom: 150px;
+}
+
+main section div h1 {
+  font-size: 64px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+main section h2 {
+  font-size: 52px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.sub-title {
+  width: 40%;
+  align-self: center;
+}
+
+.sub-title p {
+  color: #100911;
+  text-align: center;
+  background-color: white;
+}
+
+nav {
+  position: fixed;
+  background-color: rgba(28, 22, 26, 0.722);
+  width: 250px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: none;
+  margin: none;
+}
+
+li img {
+  width: 50px;
+  height: 40px;
+}
+
+#projects-box {
+  width: 50%;
+}
+
+.single-proj-box {
+  display: flex;
+  width: 60%;
+  padding: 15px;
+
+}
+
+.single-proj-box div {
+  flex: 0 0 30%;
+  border: 1px solid blue;
+  margin: 20px;
+}
+
+.single-proj-box .proj-img-box {
+  flex: 0 0 70%;
+  border: 1px solid red;
+}
+
+.proj-img-box {
+  margin: 20px;
+}
+
+.proj-img-box img {
+  max-width: 100%;
+}
