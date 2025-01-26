@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <script src="https://unpkg.com/@studio-freight/lenis"></script>
   <script src="script.js"></script>
   <title>Thiha Min Thein</title>
@@ -13,31 +14,19 @@
   <header>
     <nav>
       <ul>
-        <li>
-          <a href="#"></a>
-          <img src="images/moon.png">
-        </li>
-        <li>
-          <a href="#"></a>
-          <img src="images/moon.png">
-        </li>
-        <li>
-          <a href="#"></a>
-          <img src="images/moon.png">
-        </li>
-        <li>
-          <a href="#"></a>
-          <img src="images/moon.png">
-        </li>
+        <li><a href="#"><img src="images/moon.png" alt="Icon 1"></a></li>
+        <li><a href="#"><img src="images/moon.png" alt="Icon 2"></a></li>
+        <li><a href="#"><img src="images/moon.png" alt="Icon 3"></a></li>
+        <li><a href="#"><img src="images/moon.png" alt="Icon 4"></a></li>
       </ul>
     </nav>
     <main>
       <section id="first-view-box">
-        <div>
-          <h1> Hey, I'm Thiha Min Thein! </h1>
-          <p> An inspiring Junior Software Developer, in a search of a perfect internship opportunity. Happy reading!</p>
+        <div class="text-content">
+          <h1>Hey, I'm Thiha Min Thein!</h1>
+          <p>An inspiring Junior Software Developer, in a search of a perfect internship opportunity. Happy reading!</p>
         </div>
-        <img src="images/me.jpg">
+        <img src="images/blackshirt test.jpg" alt="Thiha Min Thein">
       </section>
 
       <section id="about-me-box">
@@ -54,66 +43,202 @@
         </div>
         
         <h2> Featured Projects </h2>
-        <section class="single-proj-box">
-          <div>
-            <h4>
-              Countries Game Visualiser
-            </h4>
-            <p>
-              bla bla bla, bla bla bla bla bla bla bla
-            </p>
-          </div>
-          <div class="proj-img-box">
-            <img src="images/worldwideview.png">
-          </div>
-        </section>
-        <section class="single-proj-box">
-          <div class="proj-img-box">
-            <img src="images/worldwideview.png">
-          </div>
-          <div>
-            <h4>
-              Hair Salon App
-            </h4>
-          </div>
-        </section>
-        <section class="single-proj-box">
-          <div>
-            <h4>
-              Book Reading App
-            </h4>
-          </div>
-          <div class="proj-img-box">
-            <img src="images/worldwideview.png">
-          </div>
-        </section>
-        <section class="single-proj-box">
-          <div class="proj-img-box">
-            <img src="images/worldwideview.png">
-          </div>
-          <div>
-            <h4>
-              AmHangry App
-            </h4>
-          </div>
-        </section>
-        <section class="single-proj-box">
-          <div>
-            <h4>
-              Drone Delivery App
-            </h4>
-          </div>
-          <div class="proj-img-box">
-            <img src="images/worldwideview.png">
-          </div>
-        </section>
-      </section>
 
-      <section>
-        <h2> My Skills </h2>
+        <section class="single-proj-box">
+          <div class="proj-img-box">
+            <img src="images/worldwideview.png" alt="Project Image">
+          </div>
+          <div class="proj-details">
+            <h4>Countries Game Visualiser</h4>
+            <p class="project-duration">Texon Limited | October 2024 – December 2024 (3 months)</p>
+            <!-- Vertical row of icons -->
+            <div class="tech-icons">
+              <i class="fab fa-react" title="React"></i>
+              <i class="fab fa-js-square" title="JavaScript"></i>
+              <i class="fab fa-html5" title="HTML5"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+              <i class="fas fa-leaf" title="Leaflet"></i>
+              <i class="fas fa-chart-line" title="Chart.js"></i>
+            </div>
+            <ul class="custom-bullets">
+              <li>Developed an interactive web application to visualize the correlation between economic data and video game market trends across different countries using React.</li>
+              <li>Integrated Leaflet for a dynamic world map view, enabling users to filter by country data (eg. Population) and by gaming data (eg. Revenue per User).</li>
+              <li>Utilized Chart.js to create eye-catching charts that will help illustrate the relationship between the 2 data categories.</li>
+              <li>Designed  RESTful API's to fetch country statistics and video game market data, ensuring efficient data retrieval and a seamless user experience.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="single-proj-box">
+          <div class="proj-details">
+            <h4>Hair Salon App</h4>
+            <p class="project-duration">MERN APP | March 2024 - May 2024 (3 months)</p>
+            <!-- Vertical row of icons -->
+            <div class="tech-icons">
+              <i class="fab fa-react" title="React"></i>
+              <i class="fab fa-js-square" title="JavaScript"></i>
+              <i class="fab fa-html5" title="HTML5"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+              <i class="fas fa-leaf" title="Leaflet"></i>
+              <i class="fas fa-chart-line" title="Chart.js"></i>
+            </div>
+            <ul class="custom-bullets">
+              <li>Designed and developed a [Full Stack] application simulating a hair salon business, enabling seamless management of appointments, accounts and client's reviews.</li>
+              <li>Built \textbf{RESTful APIs}, while also having user authentication, booking logic, and a view that logs all interactions performed in the database.</li>
+              <li>Implemented a secure login system using \textbf{SHA-256} hashing, supporting 3 user roles, them being Visitor, Member and Admin.</li>
+              <li>Optimized database queries for \textbf{SQL} and implemented \textbf{PL/SQL}, reducing response time and ensuring data consistency across multiple views.</li>
+              <li>Containerized the application using \textbf{Docker}, streamlining deployment and enhancing scalability.</li>
+              <li>Collaborated with 2 classmates, leveraging \textbf{Git} for version control and conducting code reviews to improve code quality.</li>
+            </ul>
+          </div>
+          <div class="proj-img-box">
+            <img src="images/worldwideview.png" alt="Project Image">
+          </div>
+        </section>
+
+
+        <section class="single-proj-box">
+          <div class="proj-img-box">
+            <img src="images/worldwideview.png" alt="Project Image">
+          </div>
+          <div class="proj-details">
+            <h4>Book Reading App</h4>
+            <p class="project-duration">Texon Limited | September 2024 - November 2024 (3 months)</p>
+            <!-- Vertical row of icons -->
+            <div class="tech-icons">
+              <i class="fab fa-react" title="React"></i>
+              <i class="fab fa-js-square" title="JavaScript"></i>
+              <i class="fab fa-html5" title="HTML5"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+              <i class="fas fa-leaf" title="Leaflet"></i>
+              <i class="fas fa-chart-line" title="Chart.js"></i>
+            </div>
+            <ul class="custom-bullets">
+              <li>Developed an Android app that allows users to download and read HTML books from Project Gutenberg, supporting features like text, images, and tables and displaying them.</li>
+              <li>Implemented \textbf{Room DB} for efficient storage and retrieval of book content, supporting offline reading.</li>
+              <li>Built dynamic UI using  \textbf{Jetpack Compose}, providing an adaptive layout for different screen sizes with easy navigation and search functionality.</li>
+              <li>Integrated  \textbf{OKHttp} to fetch book data and handle background downloading, and implementing unzipping and storing, ensuring seamless user experience.</li>
+              <li>Performed local and instrumental testing to ensure app stability, functionality, and smooth user interactions across various devices and scenarios.</li>
+            </ul>
+          </div>
+        </section>
+
+
+        <section class="single-proj-box">
+          <div class="proj-details">
+            <h4>AmHuangry App</h4>
+            <p class="project-duration">MERN APP | November 2024 - December 2024 (2 months)</p>
+            <!-- Vertical row of icons -->
+            <div class="tech-icons">
+              <i class="fab fa-react" title="React"></i>
+              <i class="fab fa-js-square" title="JavaScript"></i>
+              <i class="fab fa-html5" title="HTML5"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+              <i class="fas fa-leaf" title="Leaflet"></i>
+              <i class="fas fa-chart-line" title="Chart.js"></i>
+            </div>
+            <ul class="custom-bullets">
+              <li>Designed and developed a recipe-finding application using C\# with Avalonia for a modern, cross-platform UI.</li>
+              <li>Integrated an Oracle SQL database, utilizing PL/SQL for efficient data management and seamless app-database synchronization.</li>
+              <li>Implemented the MVC design pattern and enforced Separation of Concerns, ensuring modular and scalable architecture.</li>
+              <li>Utilized the MOQ framework for unit testing, achieving high code reliability and functionality.</li>
+              <li>Collaborated with a team of 3 developers, fostering strong teamwork, clear communication, and effective version control using Git.</li>
+              <li>Incorporated advanced features like recipe scaling, user recipe history, profile management, and sorting options to enhance user experience.</li>
+            </ul>
+          </div>
+          <div class="proj-img-box">
+            <img src="images/worldwideview.png" alt="Project Image">
+          </div>
+        </section>
+
+        <section class="single-proj-box">
+          <div class="proj-img-box">
+            <img src="images/worldwideview.png" alt="Project Image">
+          </div>
+          <div class="proj-details">
+            <h4>Drone Delivery App</h4>
+            <p class="project-duration">Texon Limited | October 2024 - December 2024 (3 months)</p>
+            <!-- Vertical row of icons -->
+            <div class="tech-icons">
+              <i class="fab fa-react" title="React"></i>
+              <i class="fab fa-js-square" title="JavaScript"></i>
+              <i class="fab fa-html5" title="HTML5"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+              <i class="fas fa-leaf" title="Leaflet"></i>
+              <i class="fas fa-chart-line" title="Chart.js"></i>
+            </div>
+            <ul class="custom-bullets">
+              <li>Developed a drone delivery system using \textbf{Python}, \textbf{Flask}, and \textbf{MQTT}, enabling real-time communication between the seller and multiple carrier transports using threading.</li>
+              <li>Designed and implemented a secure API using Flask, with \textbf{JWT tokens} for authorization and authentication.</li>
+              <li>Utilized \textbf{MQTT} for efficient message brokering between the local distribution and carrier transports, ensuring real-time updates on delivery status and times.</li>
+              <li>Created a dynamic dashboard using \textbf{Dash} that displays the current status of all deliveries, including proof of delivery captured by the carrier transports.</li>
+              <li>Ensured data security through Public/Private Key Encryption + Signing and JWT tokens.</li>
+            </ul>
+          </div>
+        </section>
+
+
       </section>
-      <section>
-        <h2> Experience & Education </h2>
+      <section class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+          <!-- Skill items will go here -->
+          <!-- Example: -->
+          <div class="skill-item">
+            <i class="fab fa-react"></i>
+            <span>React</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-js-square"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-html5"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-node-js"></i>
+            <span>Node.js</span>
+          </div>
+          <!-- Add more skills as needed -->
+        </div>
+      </section>
+      <section class="timeline-section">
+        <h2>Experience & Education</h2>
+        <div class="timeline">
+          <!-- Timeline Entry -->
+          <div class="timeline-entry left">
+            <div class="timeline-content">
+              <h3>Dawson College</h3>
+              <p>Computer Science Technology | 2022 - Now</p>
+              <p>Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems.</p>
+            </div>
+          </div>
+          <!-- Timeline Entry -->
+          <div class="timeline-entry right">
+            <div class="timeline-content">
+              <h3>Internship at TechCorp</h3>
+              <p>Software Development Intern | Summer 2023</p>
+              <p>Worked on building RESTful APIs and improving front-end user interfaces using React.</p>
+            </div>
+          </div>
+          <!-- Timeline Entry -->
+          <div class="timeline-entry left">
+            <div class="timeline-content">
+              <h3> Dîplome Étude Secondaire</h3>
+              <p>École Secondaire LaVoie | 2017 - 2022</p>
+              <p>Graduated while being part of the International Program (IB).</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section>

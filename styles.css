@@ -28,25 +28,41 @@ h5 {
 }
 
 #first-view-box {
-  display: flex; /* Enables flexbox layout */
+  display: flex;
   align-items: center; /* Aligns items vertically in the center */
-  justify-content: space-between; /* Ensures space is distributed evenly */
-  padding-top: 200px;
-}
-
-#first-view-box div {
-  flex: 0 0 70%; /* Takes up 70% of the width */
+  justify-content: flex-start; /* Aligns items to the start (left) */
+  padding-top: 150px; /* Adjust as needed */
+  position: relative; /* Allows overlapping */
+  gap: 20px; /* Adds space between text and image */
 }
 
 #first-view-box img {
-  flex: 0 0 auto; /* Prevents the image from resizing with flexbox */
-  width: 150px; /* Fixed width */
-  height: 150px; /* Fixed height */
+  width: 600px; /* Adjust image size */
+  height: 550px; /* Maintain aspect ratio */
   border-radius: 50%; /* Optional: Makes the image circular */
+  position: relative;
+  righT: 25%;
+  z-index: 1; /* Ensures the image is behind the text */
 }
 
-#first-view-box p {
-  color: white;
+.text-content {
+  flex: 0 0 50%; /* Takes up 50% of the width */
+  z-index: 2; /* Ensures the text is above the image */
+}
+
+.text-content h1 {
+  font-size: 64px; /* Adjust font size */
+  margin-bottom: 10px; /* Adds spacing between h1 and p */
+  color: white; /* Text color */
+}
+
+.text-content p {
+  font-size: 24px; /* Adjust font size */
+  color: white; /* Text color */
+  margin: 0; /* Removes default margin */
+  position: relative; /* Allows overlapping */
+  left: 30%; /* Overlaps the image slightly */
+  z-index: 3; /* Ensures the p tag is above the image */
 }
 
 
@@ -79,17 +95,54 @@ main section h2 {
   background-color: white;
 }
 
+/* Navigation Bar Styles */
 nav {
   position: fixed;
-  background-color: rgba(28, 22, 26, 0.722);
-  width: 250px;
+  top: 20px; /* Adjust distance from the top */
+  left: 50%; /* Centers the nav bar horizontally */
+  transform: translateX(-50%); /* Ensures perfect centering */
+  background-color: rgba(28, 22, 26, 0.722); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+  border-radius: 25px; /* Rounded edges */
+  padding: 10px 20px; /* Adds some padding */
+  z-index: 1000; /* Ensures the nav bar stays on top */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  padding: none;
-  margin: none;
+  justify-content: space-around; /* Evenly spaces the icons */
+  align-items: center; /* Centers icons vertically */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px; /* Adds spacing between icons */
+}
+
+nav ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px; /* Initial padding (left and right) */
+  transition: padding 0.3s ease; /* Smooth transition for padding */
+}
+
+nav ul li a:hover {
+  padding: 0 30px; /* Increased padding on hover (left and right) */
+}
+
+nav ul li img {
+  width: 30px; /* Adjust icon size */
+  height: 30px; /* Adjust icon size */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li img:hover {
+  transform: scale(1.1); /* Slightly enlarges the icon on hover */
+  opacity: 0.8; /* Slightly fades the icon on hover */
 }
 
 li img {
@@ -97,32 +150,211 @@ li img {
   height: 40px;
 }
 
+/* Projects Section Styles */
 #projects-box {
-  width: 50%;
+  width: 80%; /* Adjust width as needed */
+  margin: 0 auto; /* Centers the section */
+  padding-bottom: 150px; /* Adds spacing at the bottom */
+  text-align: center; /* Centers text content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .single-proj-box {
   display: flex;
-  width: 60%;
-  padding: 15px;
-
-}
-
-.single-proj-box div {
-  flex: 0 0 30%;
-  border: 1px solid blue;
-  margin: 20px;
-}
-
-.single-proj-box .proj-img-box {
-  flex: 0 0 70%;
-  border: 1px solid red;
+  align-items: center; /* Centers items vertically */
+  gap: 100px; /* Adds space between image and text */
+  margin-bottom: 60px; /* Adds spacing between projects */
+  justify-content: center; /* Centers the project boxes */
+  align-self: center;
 }
 
 .proj-img-box {
-  margin: 20px;
+  flex: 0 0 40%; /* Image takes up 40% of the width */
 }
 
 .proj-img-box img {
-  max-width: 100%;
+  width: 700px; /* Ensures the image fills the container */
+  height: 400px; /* Maintains aspect ratio */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.proj-details {
+  flex: 0 0 120%; /* Takes up 50% of the width */
+  text-align: left; /* Aligns text to the left */
+}
+
+.proj-details h4 {
+  font-size: 32px; /* Adjust title size */
+  margin-bottom: 10px; /* Adds spacing below the title */
+  margin-top: 0;
+  color: white; /* Title color */
+}
+
+.project-duration {
+  font-size: 18px; /* Adjust duration text size */
+  color: gray; /* Duration text color */
+  margin-bottom: 20px; /* Adds spacing below the duration */
+}
+
+.custom-bullets {
+  list-style: none; /* Removes default bullet points */
+  padding: 0; /* Removes default padding */
+}
+
+.custom-bullets li {
+  position: relative; /* Allows custom bullet positioning */
+  padding-left: 20px; /* Adds space for custom bullet */
+  margin-bottom: 10px; /* Adds spacing between bullet points */
+  font-size: 18px; /* Adjust bullet point text size */
+  color: white; /* Bullet point text color */
+}
+
+.custom-bullets li::before {
+  content: "-"; /* Custom bullet point */
+  color: #4CAF50; /* Bullet color (green) */
+  font-size: 24px; /* Bullet size */
+  position: absolute; /* Positions the bullet */
+  left: 0; /* Aligns the bullet to the left */
+  top: -2px; /* Adjusts vertical alignment */
+}
+
+.tech-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px; /* Adjust the gap between icons as needed */
+  margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.tech-icons i {
+  font-size: 24px; /* Adjust the icon size as needed */
+}
+
+
+
+.skills-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.skills-section h2 {
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust column size as needed */
+  gap: 20px; /* Adjust gap between items as needed */
+  max-width: 800px; /* Adjust max-width as needed */
+  margin: 0 auto;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: #fff; /* Adjust background color as needed */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skill-item i {
+  font-size: 2rem; /* Adjust icon size as needed */
+  margin-bottom: 10px;
+  color: orange; /* Adjust icon color as needed */
+}
+
+.skill-item span {
+  font-size: 1rem;
+  color: #555; /* Adjust text color as needed */
+}
+
+.timeline-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.timeline-section h2 {
+  margin-bottom: 40px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #ccc; /* Timeline line color */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-entry {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-entry.left {
+  left: -11.5%;
+}
+
+.timeline-entry.right {
+  left: 49.5%;
+}
+
+.timeline-entry::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff; /* Circle background color */
+  border: 3px solid #333; /* Circle border color */
+  top: 20px;
+  z-index: 1;
+}
+
+.timeline-entry.left::after {
+  right: -10px;
+}
+
+.timeline-entry.right::after {
+  left: -10px;
+}
+
+.timeline-content {
+  padding: 20px;
+  background-color: #fff; /* Content background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+  position: relative;
+}
+
+.timeline-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  color: #333; /* Adjust text color as needed */
+}
+
+.timeline-content p {
+  font-size: 1rem;
+  color: #555; /* Adjust text color as needed */
+  margin: 5px 0;
 }
