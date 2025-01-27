@@ -14,27 +14,54 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#"><img src="images/moon.png" alt="Icon 1"></a></li>
-        <li><a href="#"><img src="images/moon.png" alt="Icon 2"></a></li>
-        <li><a href="#"><img src="images/moon.png" alt="Icon 3"></a></li>
-        <li><a href="#"><img src="images/moon.png" alt="Icon 4"></a></li>
+        <!-- Top Arrow Icon (Scroll to Top) -->
+        <li>
+          <a href="#first-view-box">
+            <i class="fas fa-arrow-up"></i> <!-- Font Awesome arrow icon -->
+          </a>
+        </li>
+        <!-- Projects Icon -->
+        <li>
+          <a href="#projects-box">
+            <i class="fas fa-project-diagram"></i> <!-- Font Awesome projects icon -->
+          </a>
+        </li>
+        <!-- Education Icon -->
+        <li>
+          <a href="#education-section">
+            <i class="fas fa-graduation-cap"></i> <!-- Font Awesome education icon -->
+          </a>
+        </li>
+        <!-- Skills Icon -->
+        <li>
+          <a href="#skills-section">
+            <i class="fas fa-code"></i> <!-- Font Awesome skills icon -->
+          </a>
+        </li>
       </ul>
     </nav>
     <main>
       <section id="first-view-box">
         <div class="text-content">
           <h1>Hey, I'm Thiha Min Thein!</h1>
-          <p>An inspiring Junior Software Developer, in a search of a perfect internship opportunity. Happy reading!</p>
+          <p>An aspiring Junior Software Developer, in a search of a perfect internship opportunity. Happy reading!</p>
         </div>
-        <img src="images/blackshirt test.jpg" alt="Thiha Min Thein">
+        <div class="image-wrapper">
+          <img src="images/me2.jpg" alt="Thiha Min Thein">
+        </div>
       </section>
 
       <section id="about-me-box">
         <h5> About </h5>
-        <p>
-          I love learning new things and meet new people that believe in the same values as I do.
-          I particulary enjoy coding web applications with a team of developers and projects that ...
-        </p>
+        <section class="about-me-content">
+            <p>
+              I am currently living in <span>Montréal</span> and I adore every part of it. I'm passionate about <span>video editing and
+              content creation</span>: I find it fun to record videos and edit them afterwards. 
+              I also enjoy playing VolleyBall and going to the <span>gym</span>, it gives me a sense of purpose. 
+              I also play video games here and there, notably Clash of Clans and Marvel Rivals. Je suis aussi <span>bilingue!</span>
+            </p>
+          <img src="images/workout.jpg" alt="Workout Image">
+        </section>
       </section>
 
       <section id="projects-box">
@@ -165,7 +192,7 @@
         </section>
       </section>
 
-      <section class="timeline-section">
+      <section id="education-section" class="timeline-section">
         <h2>Education</h2>
         <div class="timeline">
           <!-- Timeline Entry -->
@@ -187,7 +214,7 @@
         </div>
       </section>
 
-      <section class="skills-section">
+      <section id="skills-section" class="skills-section">
         <h2>My Skills</h2>
       
         <!-- Languages Section -->
