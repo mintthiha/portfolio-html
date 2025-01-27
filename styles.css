@@ -212,12 +212,14 @@ li img {
 .tech-icons {
   display: flex;
   flex-direction: row;
-  gap: 10px; /* Adjust the gap between icons as needed */
-  margin-top: 10px; /* Adjust the margin as needed */
+  gap: 10px; /* Adjust gap between icons as needed */
+  margin-bottom: 20px; /* Space between icons and project details */
 }
 
-.tech-icons i {
-  font-size: 24px; /* Adjust the icon size as needed */
+.tech-icons img {
+  height: 2rem;
+  margin-bottom: 10px;
+  filter: brightness(0) invert(1)
 }
 
 .skills-section {
