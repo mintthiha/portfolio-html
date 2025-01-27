@@ -423,13 +423,6 @@ section.is-visible {
 }
 
 
-
-
-
-
-
-
-
 /* Container for the image */
 .image-wrapper {
   perspective: 1000px; /* Adds depth for the 3D effect */
@@ -443,5 +436,3 @@ section.is-visible {
   transition: transform 0.3s ease-out; /* Smooth transition for the effect */
   transform-style: preserve-3d; /* Ensures the image behaves in 3D space */
 }
-
-

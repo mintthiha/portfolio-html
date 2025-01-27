@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+  //Scroll animation
   const sections = document.querySelectorAll("section");
-
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(section);
   });
 
+  // 3D effect for image
   const imageWrapper = document.querySelector(".image-wrapper");
   const image = imageWrapper.querySelector("img");
 
@@ -47,6 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
     image.style.transform = "rotateX(0deg) rotateY(0deg)";
   });
 
+
+  //Lenis scrolling
   const lenis = new Lenis({
     duration: 1.2,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
