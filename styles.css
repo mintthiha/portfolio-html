@@ -303,7 +303,7 @@ li img {
 }
 
 .timeline-entry.left {
-  left: -11.5%;
+  right: 11.5%
 }
 
 .timeline-entry.right {
@@ -407,6 +407,30 @@ li img {
   border-radius: 20px;
 }
 
+/*****************************************/
+
+@media (max-width: 767px) {
+
+  .timeline-entry.left {
+    left: -22%
+  }
+  
+  .timeline-entry.right {
+    left: 49.5%;
+  }
+
+  nav {
+    left: 30%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  #first-view-box {
+    flex-direction: column;
+  }
+}
 
 /******************************************************/
 
