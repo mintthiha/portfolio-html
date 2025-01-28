@@ -382,12 +382,11 @@ li img {
 
 #about-me-box h5 {
   align-self: center;
-
 }
 
 #about-me-box p {
   color: gray;
-  margin-top: 0;
+  margin: 0 100px 0 100px;
   align-self: center;
 }
 
@@ -397,7 +396,7 @@ li img {
 
 .about-me-content {
   align-self: center;
-  width: 150%;
+  width: 200%;
   display: flex;
   justify-content: space-between;
 }
@@ -425,14 +424,14 @@ section.is-visible {
 
 /* Container for the image */
 .image-wrapper {
-  perspective: 1000px; /* Adds depth for the 3D effect */
-  display: inline-block; /* Ensures the wrapper doesn't take full width */
+  perspective: 500px; /* Adds depth for the 3D effect */
+  display: inline-block;
 }
 
 /* Image styling */
 .image-wrapper img {
-  width: 300px; /* Adjust as needed */
+  width: 300px; 
   height: auto;
-  transition: transform 0.3s ease-out; /* Smooth transition for the effect */
+  transition: transform 0.3s ease-out;
   transform-style: preserve-3d; /* Ensures the image behaves in 3D space */
 }
