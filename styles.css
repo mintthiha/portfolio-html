@@ -1,5 +1,5 @@
 html {
-  background-color: #100911;
+  background: radial-gradient(circle at left, #1a1019, #100911);
   color: white;
   font-family: "Oswald";
   scroll-behavior: smooth;
