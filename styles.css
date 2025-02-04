@@ -407,6 +407,33 @@ li img {
   border-radius: 20px;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip Text */
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 12px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  bottom: 125%; /* Position above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+}
+
+
 /*****************************************/
 
 @media (max-width: 767px) {
