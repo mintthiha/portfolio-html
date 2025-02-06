@@ -118,6 +118,7 @@ nav ul li a {
   justify-content: center;
   padding: 0 5px;
   transition: padding 0.3s ease;
+  text-decoration: none;
 }
 
 nav ul li a:hover {
@@ -125,13 +126,14 @@ nav ul li a:hover {
 }
 
 nav ul li i {
+  font-size: 22px;
   color: white;
 }
 
 nav ul li i:hover {
   transform: scale(1.1);
   opacity: 0.8;
-  color: rgb(33, 209, 33);
+  color: #4C6EF5;
 }
 
 li img {
@@ -351,7 +353,7 @@ li img {
 }
 
 .important {
-  color: rgb(50, 192, 55);
+  color: #4C6EF5;
 }
 
 .timeline-content .edu-description {
