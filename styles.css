@@ -433,6 +433,20 @@ li img {
   opacity: 1;
 }
 
+.about-me-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  justify-content: space-around;
+}
+
+.about-me-icons img {
+  height: 3rem;
+  margin-bottom: 10px;
+  filter: brightness(0) invert(1);
+}
 
 /*****************************************/
 
